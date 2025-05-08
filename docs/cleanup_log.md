@@ -23,6 +23,19 @@ Tracking removal of verified unused symbols using `nm`, `ripgrep`, and `make`.
 
 ---
 
+#### Symbol: `gUnusedBikeCameraAheadPanback`
+- **Declared in:** `include/bike.h`
+- **Defined in:** `src/field_camera.c`, `src/bike.c`
+- **References:** Only used in conditionals that always evaluate the same way
+  - `nm pokeemerald.elf | grep gUnusedBikeCameraAheadPanback`
+  - `rg gUnusedBikeCameraAheadPanback`
+- ✅ Confirmed static `FALSE` initializer and no mutations
+- 🧹 Replaced all logic depending on this variable with constant branches
+- 🛠 Removed from both header and source
+- ✅ `make` succeeded post-removal
+
+---
+
 ### 📌 Notes
 - `nm` confirmed symbol was present in ELF before removal.
 - `make` was rerun after the edit to ensure ROM integrity.
