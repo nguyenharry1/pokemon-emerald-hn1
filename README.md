@@ -1,5 +1,11 @@
 # Pokémon Emerald
 
+
+This is my personalized version of Pokémon Emerald built on top of pret/pokeemerald.
+Changes include optimization, experimental mechanics, and cleaned symbols.
+Maintained and modified by @nguyenharry1.
+
+
 This is a decompilation of Pokémon Emerald.
 
 It builds the following ROM:
